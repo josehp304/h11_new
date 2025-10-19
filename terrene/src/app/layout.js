@@ -3,7 +3,7 @@ import ClientLayout from "@/client-layout";
 import TopBar from "@/components/TopBar/TopBar";
 
 export const metadata = {
-  title: "Revo Realtors | MWT by Codegrid ",
+  title: "RevoRealtors | MontClair Labs",
   description: "Monthly Website Template by Codegrid | August 2025",
 };
 
