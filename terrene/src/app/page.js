@@ -171,7 +171,7 @@ export default function Home() {
           <div className="intro-logo">
             <div className="word" id="word-1">
               <h1>
-                <span>Terrene</span>
+                <span>Revo Realtors</span>
               </h1>
             </div>
             <div className="word" id="word-2">
@@ -242,7 +242,7 @@ export default function Home() {
             <div className="hero-tagline">
               <Copy animateOnScroll={false} delay={showPreloader ? 10.15 : 1}>
                 <p>
-                  At Terrene, we shape environments that elevate daily life,
+                  At Revo Realtors, we shape environments that elevate daily life,
                   invite pause, and speak through texture and light.
                 </p>
               </Copy>
@@ -318,7 +318,7 @@ export default function Home() {
             <Copy delay={0.1}>
               <h1>
                 <span className="spacer">&nbsp;</span>
-                At Terrene, we design with purpose and clarity, creating spaces
+                At Revo Realtors, we design with purpose and clarity, creating spaces
                 that speak through light, scale, and the quiet confidence of
                 lasting form.
               </h1>
@@ -428,7 +428,7 @@ export default function Home() {
       </section>
       <CTAWindow
         img="/home/home-cta-window.jpg"
-        header="Terrene"
+        header="Revo Realtors"
         callout="Spaces that breathe with time"
         description="Our approach is guided by rhythm, proportion, and light, allowing every environment to grow more meaningful as it is lived in."
       />

@@ -52,7 +52,7 @@ const Footer = () => {
             <div className="footer-meta-block">
               <div className="footer-meta-logo">
                 <Copy delay={0.1}>
-                  <h3 className="lg">Terrene</h3>
+                  <h3 className="lg">Revo Realtors</h3>
                 </Copy>
               </div>
               <Copy delay={0.2}>

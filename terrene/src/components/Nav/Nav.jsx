@@ -287,8 +287,9 @@ const Nav = () => {
                 </div>
                 <div className="menu-meta">
                   <p>Studio Address</p>
-                  <p>18 Cordova Lane</p>
-                  <p>Seattle, WA 98101</p>
+                  <p>No.17, Narasimhavilas Complex</p>
+                  <p>opp. YWCA Buildings, Statue, Palayam</p>
+                  <p>Thiruvananthapuram, Kerala 695001, India</p>
                 </div>
               </div>
               <div className="sub-col">
