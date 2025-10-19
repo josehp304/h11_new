@@ -4,7 +4,8 @@ import TopBar from "@/components/TopBar/TopBar";
 
 export const metadata = {
   title: "RevoRealtors | MontClair Labs",
-  description: "Monthly Website Template by Codegrid | August 2025",
+  title: "RevoRealtors | Phase 1",
+  description: "",
 };
 
 export default function RootLayout({ children }) {
