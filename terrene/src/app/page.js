@@ -235,11 +235,11 @@ export default function Home() {
           <div className="intro-logo">
             <div className="word" id="word-1">
               <h1>
-                <span>Revo Realtors</span>
+                <span>House Of Eleven</span>
               </h1>
             </div>
             <div className="word" id="word-2">
-              <h1>Balance</h1>
+              <h1>H11</h1>
             </div>
           </div>
           <div className="divider"></div>
@@ -306,7 +306,7 @@ export default function Home() {
             <div className="hero-tagline">
               <Copy animateOnScroll={false} delay={showEnhancedPreloader ? 7.15 : 1}>
                 <p>
-                  At Revo Realtors, we shape environments that elevate daily life,
+                  At House Of Eleven, we shape environments that elevate daily life,
                   invite pause, and speak through texture and light.
                 </p>
               </Copy>
@@ -382,7 +382,7 @@ export default function Home() {
             <Copy delay={0.1}>
               <h1>
                 <span className="spacer">&nbsp;</span>
-                At Revo Realtors, we design with purpose and clarity, creating spaces
+                At House Of Eleven, we design with purpose and clarity, creating spaces
                 that speak through light, scale, and the quiet confidence of
                 lasting form.
               </h1>
@@ -492,7 +492,7 @@ export default function Home() {
       </section>
       <CTAWindow
         img="/home/home-cta-window.jpg"
-        header="Revo Realtors"
+        header="House Of Eleven"
         callout="Spaces that breathe with time"
         description="Our approach is guided by rhythm, proportion, and light, allowing every environment to grow more meaningful as it is lived in."
       />

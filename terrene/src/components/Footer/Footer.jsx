@@ -52,7 +52,7 @@ const Footer = () => {
             <div className="footer-meta-block">
               <div className="footer-meta-logo">
                 <Copy delay={0.1}>
-                  <h3 className="lg">Revo Realtors</h3>
+                  <h3 className="lg">House Of Eleven</h3>
                 </Copy>
               </div>
               <Copy delay={0.2}>
@@ -150,12 +150,11 @@ const Footer = () => {
       </div>
       <div className="footer-outro">
         <div className="container">
-          <div className="footer-header">
+          {/* <div className="footer-header">
             <img src="/logos/terrene-footer-logo.svg" alt="" />
-          </div>
+          </div> */}
           <div className="footer-copyright">
             <p>
-              Built by — <span>raghav</span>
             </p>
             <p>This website is using cookies.</p>
             <p>All rights reserverd &copy; 2025</p>

@@ -29,13 +29,13 @@ const page = () => {
                 <div className="contact-info-block">
                   <Copy delay={0.85}>
                     <p>General</p>
-                    <p>desk@terrene.studio</p>
+                    <p>desk@houseofeleven.studio</p>
                   </Copy>
                 </div>
                 <div className="contact-info-block">
                   <Copy delay={1}>
                     <p>New Commissions</p>
-                    <p>build@terrene.studio</p>
+                    <p>build@houseofeleven.studio</p>
                     <p>+1 (872) 441‑2086</p>
                   </Copy>
                 </div>
@@ -59,7 +59,7 @@ const page = () => {
               <div className="contact-img">
                 <img
                   src="/contact/contact-img.jpg"
-                  alt="Revo Realtors studio workspace"
+                  alt="House Of Eleven studio workspace"
                 />
               </div>
             </div>

@@ -8,8 +8,8 @@ import SplitType from "split-type";
 export default function Preloader({ 
   className = "", 
   onAnimationReady,
-  mainTitle = "Revo Realtors",
-  logoNumber = "RR",
+  mainTitle = "House Of Eleven",
+  logoNumber = "H11",
   tags = ["Architecture", "Interior Design", "Spatial Planning"]
 }) {
   const hasInitialized = useRef(false);
