@@ -167,3 +167,155 @@ body.menu-open .menu *,
 body.menu-open .menu-toggle {
   pointer-events: auto;
 }
+
+/* ====================================
+   ENHANCED PRELOADER STYLES
+   ==================================== */
+.enhanced-preloader,
+.split-overlay,
+.tags-overlay {
+  text-transform: uppercase;
+}
+
+.enhanced-preloader,
+.split-overlay,
+.tags-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100svh;
+  top: 0;
+  left: 0;
+}
+
+.enhanced-preloader,
+.split-overlay {
+  background-color: #0d0c0c;
+  color: var(--base-100);
+}
+
+.enhanced-preloader,
+.tags-overlay {
+  z-index: 10000;
+}
+
+.split-overlay {
+  z-index: 9999;
+}
+
+.intro-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.outro-title {
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 10rem);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.tag {
+  position: absolute;
+  width: max-content;
+  color: var(--base-300);
+  overflow: hidden;
+  font-family: "DM Mono", monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.tag-1 {
+  top: 15%;
+  left: 15%;
+}
+
+.tag-2 {
+  bottom: 15%;
+  left: 25%;
+}
+
+.tag-3 {
+  bottom: 30%;
+  right: 15%;
+}
+
+.intro-title .char,
+.outro-title .char {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 0.75rem;
+}
+
+.intro-title .char span,
+.outro-title .char span,
+.tag .word {
+  position: relative;
+  display: inline-block;
+  transform: translateY(-100%);
+  will-change: transform;
+}
+
+.intro-title .first-char {
+  transform-origin: top left;
+}
+
+/* Preloader specific typography */
+.enhanced-preloader h1,
+.split-overlay h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.15rem;
+}
+
+.enhanced-preloader p,
+.tags-overlay p {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Mobile Responsive for Enhanced Preloader */
+@media (max-width: 1000px) {
+  .enhanced-preloader h1,
+  .split-overlay h1 {
+    font-size: 2.5rem;
+    letter-spacing: -0.075rem;
+  }
+  
+  .outro-title {
+    left: calc(50% + 4rem);
+  }
+  
+  .intro-title .char,
+  .outro-title .char {
+    margin-top: 0.5rem;
+  }
+
+  .tag {
+    font-size: 0.7rem;
+  }
+
+  .tag-1 {
+    top: 10%;
+    left: 10%;
+  }
+
+  .tag-2 {
+    bottom: 10%;
+    left: 15%;
+  }
+
+  .tag-3 {
+    bottom: 20%;
+    right: 10%;
+  }
+}

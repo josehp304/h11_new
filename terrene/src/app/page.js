@@ -16,6 +16,7 @@ import FeaturedProjects from "@/components/FeaturedProjects/FeaturedProjects";
 import ClientReviews from "@/components/ClientReviews/ClientReviews";
 import CTAWindow from "@/components/CTAWindow/CTAWindow";
 import Copy from "@/components/Copy/Copy";
+import Preloader from "@/components/Preloader/Preloader";
 
 let isInitialLoad = true;
 gsap.registerPlugin(ScrollTrigger, CustomEase);
@@ -25,6 +26,8 @@ export default function Home() {
   const tagsRef = useRef(null);
   const [showPreloader, setShowPreloader] = useState(isInitialLoad);
   const [loaderAnimating, setLoaderAnimating] = useState(false);
+  const [showEnhancedPreloader, setShowEnhancedPreloader] = useState(isInitialLoad);
+  const hasEnhancedInit = useRef(false);
   const lenis = useLenis();
 
   useEffect(() => {
@@ -42,6 +45,59 @@ export default function Home() {
       }
     }
   }, [lenis, loaderAnimating]);
+
+  const handleEnhancedPreloaderReady = (tl) => {
+    if (hasEnhancedInit.current) return;
+    hasEnhancedInit.current = true;
+
+    setLoaderAnimating(true);
+
+    // Continue the timeline after preloader animations
+    tl.to(
+      [".enhanced-preloader", ".split-overlay"],
+      {
+        clipPath: "polygon(0 0, 100% 0, 100% 0%, 0 0%)",
+        duration: 1,
+        ease: "hop",
+      },
+      5.5
+    )
+      .to(
+        [".enhanced-preloader", ".split-overlay"],
+        {
+          y: (i) => (i === 0 ? "-50%" : "50%"),
+          duration: 1,
+          ease: "hop",
+        },
+        5.5
+      )
+      .to(
+        ".tags-overlay",
+        {
+          opacity: 0,
+          duration: 0.5,
+          ease: "hop",
+        },
+        5.5
+      )
+      .to(
+        ".hero-content",
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "hop",
+          onComplete: () => {
+            gsap.set([".enhanced-preloader", ".split-overlay", ".tags-overlay"], { 
+              display: "none" 
+            });
+            setShowEnhancedPreloader(false);
+            setLoaderAnimating(false);
+          },
+        },
+        5
+      );
+  };
 
   useGSAP(() => {
     const tl = gsap.timeline({
@@ -162,8 +218,16 @@ export default function Home() {
 
   return (
     <>
+      {showEnhancedPreloader && (
+        <Preloader 
+          onAnimationReady={handleEnhancedPreloaderReady}
+          mainTitle="House Of Eleven"
+          logoNumber="11"
+          tags={["Architecture", "Interior Design", "Spatial Planning"]}
+        />
+      )}
       {showPreloader && (
-        <div className="loader">
+        <div className="loader" style={{ display: 'none' }}>
           <div className="overlay">
             <div className="block"></div>
             <div className="block"></div>
@@ -231,16 +295,16 @@ export default function Home() {
         <div className="hero-bg">
           <img src="/home/hero.jpg" alt="" />
         </div>
-        <div className="hero-gradient"></div>
-        <div className="container">
-          <div className="hero-content">
+        {/* <div className="hero-gradient"></div>  */}
+        <div className="container1">
+          <div className="hero-content" style={{ opacity: showEnhancedPreloader ? 0 : 1, transform: showEnhancedPreloader ? 'translateY(20px)' : 'translateY(0)' }}>
             <div className="hero-header">
-              <Copy animateOnScroll={false} delay={showPreloader ? 10 : 0.85}>
+              <Copy animateOnScroll={false} delay={showEnhancedPreloader ? 7 : 0.85}>
                 <h1>Spaces that feel rooted, human, and quietly bold</h1>
               </Copy>
             </div>
             <div className="hero-tagline">
-              <Copy animateOnScroll={false} delay={showPreloader ? 10.15 : 1}>
+              <Copy animateOnScroll={false} delay={showEnhancedPreloader ? 7.15 : 1}>
                 <p>
                   At Revo Realtors, we shape environments that elevate daily life,
                   invite pause, and speak through texture and light.
@@ -251,7 +315,7 @@ export default function Home() {
               label="Discover More"
               route="/studio"
               animateOnScroll={false}
-              delay={showPreloader ? 10.3 : 1.15}
+              delay={showEnhancedPreloader ? 7.3 : 1.15}
             />
           </div>
         </div>

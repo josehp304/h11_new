@@ -155,7 +155,7 @@ const Footer = () => {
           </div>
           <div className="footer-copyright">
             <p>
-              Developed by — <span>Codegrid</span>
+              Built by — <span>raghav</span>
             </p>
             <p>This website is using cookies.</p>
             <p>All rights reserverd &copy; 2025</p>
