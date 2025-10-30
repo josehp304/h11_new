@@ -82,9 +82,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--base-400);
+  border: 1px solid var(--base-300);
   border-radius: 10rem;
   font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.footer .footer-socials-wrapper .icon:hover {
+  background-color: var(--base-450);
+  border-color: var(--base-100);
 }
 
 .footer .footer-socials p {

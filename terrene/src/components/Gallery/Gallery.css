@@ -5,6 +5,7 @@
   overflow: hidden;
   cursor: grab;
   background-color: var(--base-500);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .canvas {
@@ -19,6 +20,7 @@
   overflow: hidden;
   cursor: pointer;
   border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .item img {
@@ -91,4 +93,6 @@
   margin-right: 0.1em;
   transform: translateY(0%);
   will-change: transform;
+  color: var(--base-100);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

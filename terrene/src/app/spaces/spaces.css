@@ -34,6 +34,11 @@
   color: var(--base-300);
   padding: 0.5rem 0;
   cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.spaces .prop-filters .filter:hover {
+  color: var(--base-200);
 }
 
 .spaces .prop-filters .filter.default {
@@ -52,6 +57,8 @@
   aspect-ratio: 16/4;
   border-radius: 2rem;
   overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .spaces .space .space-img img {

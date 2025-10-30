@@ -38,8 +38,9 @@
   border-radius: 1rem;
   overflow: hidden;
   padding: 1rem;
-  background-color: var(--base-400);
+  background-color: var(--base-450);
   will-change: opacity;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .client-reviews .client-review-img img {
@@ -84,21 +85,22 @@
   gap: 0.5rem;
   cursor: pointer;
   overflow: hidden;
-  background-color: var(--base-400);
+  background-color: var(--base-450);
   border-radius: 0.25rem;
   padding: 0.25rem;
   height: 3rem;
   flex-shrink: 0;
   position: relative;
   transition: background-color 500ms ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .client-reviews .client-item:hover {
-  background-color: var(--base-200);
+  background-color: var(--base-400);
 }
 
 .client-reviews .client-item.active {
-  background-color: var(--base-100);
+  background-color: var(--base-300);
 }
 
 .client-reviews .client-avatar {
@@ -127,7 +129,7 @@
 .client-reviews p.client-name {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--base-500);
+  color: var(--base-100);
   line-height: 1;
   margin: 0;
   will-change: opacity;

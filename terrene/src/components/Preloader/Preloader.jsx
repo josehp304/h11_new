@@ -62,7 +62,7 @@ export default function Preloader({
     );
     
     gsap.set(".split-overlay .intro-title .first-char", {
-      x: isMobile ? "7.5rem" : "18rem",
+      x: isMobile ? "7.5rem" : "17rem",
       y: isMobile ? "-1rem" : "-2.75rem",
       fontWeight: "900",
       scale: 0.75,
@@ -120,7 +120,7 @@ export default function Preloader({
       .to(
         ".enhanced-preloader .intro-title .first-char",
         {
-          x: isMobile ? "9rem" : "21.25rem",
+          x: isMobile ? "9rem" : "20.25rem",
           duration: 1,
         },
         3.5
@@ -136,7 +136,7 @@ export default function Preloader({
       .to(
         ".enhanced-preloader .intro-title .first-char",
         {
-          x: isMobile ? "7.5rem" : "18rem",
+          x: isMobile ? "7.5rem" : "17rem",
           y: isMobile ? "-1rem" : "-2.75rem",
           fontWeight: "900",
           scale: 0.75,

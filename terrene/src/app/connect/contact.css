@@ -56,6 +56,8 @@
   aspect-ratio: 1;
   border-radius: 2rem;
   overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 1000px) {

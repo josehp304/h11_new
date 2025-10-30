@@ -30,6 +30,7 @@
   transform-origin: 50% 100%;
   will-change: transform;
   overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .featured-projects .featured-project-card-content {

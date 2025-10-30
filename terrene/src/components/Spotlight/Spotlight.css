@@ -37,6 +37,7 @@
   overflow: hidden;
   border-radius: 2rem;
   background-color: var(--base-450);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .spotlight-intro-text-wrapper {
@@ -163,6 +164,8 @@
   will-change: transform;
   border-radius: 1rem;
   overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .spotlight-img img {
