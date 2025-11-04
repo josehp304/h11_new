@@ -1,6 +1,7 @@
 import "./globals.css";
 import ClientLayout from "@/client-layout";
 import TopBar from "@/components/TopBar/TopBar";
+import AudioPlayer from "@/components/AudioPlayer/AudioPlayer";
 
 export const metadata = {
   title: "House Of Eleven | Premium Architecture & Design",
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
       <body>
         <ClientLayout>
           <TopBar />
+          <AudioPlayer />
           {children}
         </ClientLayout>
       </body>

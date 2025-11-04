@@ -95,7 +95,7 @@ export default function Home() {
             setLoaderAnimating(false);
           },
         },
-        5
+        6
       );
   };
 
@@ -299,7 +299,7 @@ export default function Home() {
         <div className="container1">
           <div className="hero-content" style={{ opacity: showEnhancedPreloader ? 0 : 1, transform: showEnhancedPreloader ? 'translateY(20px)' : 'translateY(0)' }}>
             <div className="hero-header">
-              <Copy animateOnScroll={false} delay={showEnhancedPreloader ? 7 : 0.85}>
+              <Copy animateOnScroll={false} delay={showEnhancedPreloader ? 6 : 0.85}>
                 <h1>Spaces that feel rooted, human, and quietly bold</h1>
               </Copy>
             </div>
