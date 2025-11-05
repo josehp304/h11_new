@@ -1,30 +1,30 @@
 const featuredProjectsContent = [
   {
-    info: "An immersive lounge built around a central tree",
-    title: "Sanctum Hall",
+    info: "A contemporary apartment design",
+    title: "Alice Christy Apartment",
     description:
-      "Circular seating, arched openings, and natural textures create a serene gathering space. The design balances monumentality with intimacy, framing nature as the focal point.",
+      "Modern living spaces thoughtfully designed with attention to detail and comfort. The design creates a harmonious blend of functionality and aesthetic appeal.",
     image: "/featured-projects/featured-work-1.jpg",
   },
   {
-    info: "A private retreat defined by water and sun",
-    title: "Desert Poolhouse",
+    info: "An elegant residential interior",
+    title: "Anas Babu Residence",
     description:
-      "Soft stucco walls, a lone palm, and an open sky bring elemental simplicity. The still surface of the pool becomes both mirror and threshold, blurring enclosure and openness.",
+      "Sophisticated interior spaces that reflect personal style and comfort. The design emphasizes clean lines and natural light to create inviting living areas.",
     image: "/featured-projects/featured-work-2.jpg",
   },
   {
-    info: "A cloister-inspired courtyard with generous arches",
-    title: "Arcade Residence",
+    info: "A beautifully designed family home",
+    title: "Divya Residence",
     description:
-      "Rhythmic colonnades and layered seating zones encourage calm gatherings. Textured stone and filtered light evoke both permanence and ease, rooted in classical geometry.",
+      "Warm and welcoming spaces designed for modern family living. The interior showcases thoughtful spatial planning with contemporary finishes and fixtures.",
     image: "/featured-projects/featured-work-3.jpg",
   },
   {
-    info: "A refined interior anchored by symmetry and light",
-    title: "Atrium Gallery",
+    info: "Architectural excellence in design",
+    title: "Francis Residence",
     description:
-      "A quiet procession of columns and a sculptural centerpiece guide the eye toward framed views. Warm plaster walls and soft daylight create a setting of contemplative elegance.",
+      "A stunning residence that combines architectural innovation with practical living. The design features carefully curated spaces that balance form and function.",
     image: "/featured-projects/featured-work-4.jpg",
   },
 ];

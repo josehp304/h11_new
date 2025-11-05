@@ -26,16 +26,16 @@ const Spotlight = () => {
   };
 
   const spotlightItems = [
-    { name: "Courtyard Stillness", img: "/spotlight/spotlight-img-1.jpg" },
-    { name: "Blue Horizon", img: "/spotlight/spotlight-img-2.jpg" },
-    { name: "Stone Quiet", img: "/spotlight/spotlight-img-3.jpg" },
-    { name: "Amber Niche", img: "/spotlight/spotlight-img-4.jpg" },
-    { name: "Earthen Shelf", img: "/spotlight/spotlight-img-5.jpg" },
-    { name: "Reflective White", img: "/spotlight/spotlight-img-6.jpg" },
-    { name: "Desert Edge", img: "/spotlight/spotlight-img-7.jpg" },
-    { name: "Soft Passage", img: "/spotlight/spotlight-img-8.jpg" },
-    { name: "Water Column", img: "/spotlight/spotlight-img-9.jpg" },
-    { name: "Golden Retreat", img: "/spotlight/spotlight-img-10.jpg" },
+    { name: "Alice Christy Apartment", img: "/spotlight/spotlight-img-1.jpg" },
+    { name: "Anas Babu Residence", img: "/spotlight/spotlight-img-2.jpg" },
+    { name: "Divya Residence", img: "/spotlight/spotlight-img-3.jpg" },
+    { name: "Francis Residence", img: "/spotlight/spotlight-img-4.jpg" },
+    { name: "John Residence Living", img: "/spotlight/spotlight-img-5.jpg" },
+    { name: "Jose Residence Mumbai", img: "/spotlight/spotlight-img-6.jpg" },
+    { name: "Bava's Residence", img: "/spotlight/spotlight-img-7.jpg" },
+    { name: "Thali Residence", img: "/spotlight/spotlight-img-8.jpg" },
+    { name: "Poornima Residence", img: "/spotlight/spotlight-img-9.jpg" },
+    { name: "Gilead Care Home", img: "/spotlight/spotlight-img-10.jpg" },
   ];
 
   useEffect(() => {

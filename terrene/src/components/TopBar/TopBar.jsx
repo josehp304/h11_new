@@ -76,7 +76,7 @@ const TopBar = () => {
             navigateWithTransition("/");
           }}
         >
-          <img src="/logos/terrene-logo-symbol.png" alt="" />
+          <img src="/icon.png" alt="" />
         </a>
       </div>
       <div className="top-bar-cta">
