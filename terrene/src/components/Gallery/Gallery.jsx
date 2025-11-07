@@ -135,7 +135,7 @@ export default function Gallery() {
     };
   }, []);
 
-  const itemCount = 20;
+  const itemCount = 100;
   const itemGap = 150;
   const columns = 4;
   const itemWidth = 120;

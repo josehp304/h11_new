@@ -71,6 +71,10 @@
   overflow: hidden;
 }
 
+.featured-projects .featured-project-card-img img {
+  transform: scale(1.1);
+}
+
 .featured-projects .featured-project-card-inner::after {
   content: "";
   position: absolute;

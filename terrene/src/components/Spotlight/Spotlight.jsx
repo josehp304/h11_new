@@ -36,6 +36,16 @@ const Spotlight = () => {
     { name: "Thali Residence", img: "/spotlight/spotlight-img-8.jpg" },
     { name: "Poornima Residence", img: "/spotlight/spotlight-img-9.jpg" },
     { name: "Gilead Care Home", img: "/spotlight/spotlight-img-10.jpg" },
+    { name: "Ajith Residence", img: "/spotlight/spotlight-img-11.jpg" },
+    { name: "Chrisbin Sony Residence", img: "/spotlight/spotlight-img-12.jpg" },
+    { name: "Sreelatha Residence", img: "/spotlight/spotlight-img-13.jpg" },
+    { name: "Royal Supermarket", img: "/spotlight/spotlight-img-14.jpg" },
+    { name: "Proposed Cafe Chelakkara", img: "/spotlight/spotlight-img-15.jpg" },
+    { name: "Joshy Residence", img: "/spotlight/spotlight-img-16.jpg" },
+    { name: "Francis Residence Kitchen", img: "/spotlight/spotlight-img-17.jpg" },
+    { name: "John Residence Dining", img: "/spotlight/spotlight-img-18.jpg" },
+    { name: "Wadakanchery Church", img: "/spotlight/spotlight-img-19.jpg" },
+    { name: "Bava's Residence Dining", img: "/spotlight/spotlight-img-20.jpg" },
   ];
 
   useEffect(() => {

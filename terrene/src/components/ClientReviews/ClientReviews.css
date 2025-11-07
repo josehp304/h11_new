@@ -51,6 +51,8 @@
   border-radius: 0.75rem;
   object-fit: cover;
   will-change: opacity;
+  transform: scale(1.1);
+  
 }
 
 .client-reviews .client-review-copy h3 {
