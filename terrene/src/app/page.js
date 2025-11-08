@@ -293,7 +293,7 @@ export default function Home() {
       <Nav />
       <section className="hero">
         <div className="hero-bg">
-          <img src="/home/hero.jpg" alt="" />
+          <img src="/archive/archive-27.jpg" alt="" />
         </div>
         {/* <div className="hero-gradient"></div>  */}
         <div className="container1">
