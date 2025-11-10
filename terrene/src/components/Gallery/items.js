@@ -100,6 +100,21 @@ const items = [
   "Poornima Residence - Interior 2",
   "Poornima Residence - Interior 3",
   "Poornima Residence - Interior 4",
+  "Architectural Blueprint 1",
+  "Architectural Blueprint 2",
+  "Architectural Blueprint 3",
+  "Architectural Blueprint 4",
+  "Architectural Blueprint 5",
+  "Architectural Blueprint 6",
+  "Architectural Blueprint 7",
+  "Architectural Blueprint 8",
+  "Architectural Blueprint 9",
+  "Architectural Blueprint 10",
+  "Architectural Blueprint 11",
+  "Architectural Blueprint 12",
+  "Architectural Blueprint 13",
+  "Architectural Blueprint 14",
+  "Architectural Blueprint 15",
 ];
 
 export default items;
