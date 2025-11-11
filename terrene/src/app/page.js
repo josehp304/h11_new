@@ -26,7 +26,8 @@ export default function Home() {
   const tagsRef = useRef(null);
   const [showPreloader, setShowPreloader] = useState(isInitialLoad);
   const [loaderAnimating, setLoaderAnimating] = useState(false);
-  const [showEnhancedPreloader, setShowEnhancedPreloader] = useState(isInitialLoad);
+  const [showEnhancedPreloader, setShowEnhancedPreloader] =
+    useState(isInitialLoad);
   const hasEnhancedInit = useRef(false);
   const lenis = useLenis();
 
@@ -60,7 +61,7 @@ export default function Home() {
         duration: 1,
         ease: "hop",
       },
-      5.5
+      5.5,
     )
       .to(
         [".enhanced-preloader", ".split-overlay"],
@@ -69,7 +70,7 @@ export default function Home() {
           duration: 1,
           ease: "hop",
         },
-        5.5
+        5.5,
       )
       .to(
         ".tags-overlay",
@@ -78,7 +79,7 @@ export default function Home() {
           duration: 0.5,
           ease: "hop",
         },
-        5.5
+        5.5,
       )
       .to(
         ".hero-content",
@@ -88,14 +89,17 @@ export default function Home() {
           duration: 1,
           ease: "hop",
           onComplete: () => {
-            gsap.set([".enhanced-preloader", ".split-overlay", ".tags-overlay"], { 
-              display: "none" 
-            });
+            gsap.set(
+              [".enhanced-preloader", ".split-overlay", ".tags-overlay"],
+              {
+                display: "none",
+              },
+            );
             setShowEnhancedPreloader(false);
             setLoaderAnimating(false);
           },
         },
-        6
+        6,
       );
   };
 
@@ -121,7 +125,7 @@ export default function Home() {
             duration: 1,
             stagger: 0.075,
           },
-          index * 1
+          index * 1,
         );
 
         if (index < counts.length) {
@@ -132,7 +136,7 @@ export default function Home() {
               duration: 1,
               stagger: 0.075,
             },
-            index * 1 + 1
+            index * 1 + 1,
           );
         }
       });
@@ -148,7 +152,7 @@ export default function Home() {
           y: "0%",
           duration: 1,
         },
-        "<"
+        "<",
       );
 
       tl.to(".divider", {
@@ -170,7 +174,7 @@ export default function Home() {
           y: "-100%",
           duration: 1,
         },
-        "<"
+        "<",
       );
 
       tl.to(
@@ -188,7 +192,7 @@ export default function Home() {
             setLoaderAnimating(false);
           },
         },
-        "<"
+        "<",
       );
     }
   }, [showPreloader]);
@@ -213,13 +217,13 @@ export default function Home() {
         }),
       });
     },
-    { scope: tagsRef }
+    { scope: tagsRef },
   );
 
   return (
     <>
       {showEnhancedPreloader && (
-        <Preloader 
+        <Preloader
           onAnimationReady={handleEnhancedPreloaderReady}
           mainTitle="House Of Eleven"
           logoNumber="11"
@@ -227,7 +231,7 @@ export default function Home() {
         />
       )}
       {showPreloader && (
-        <div className="loader" style={{ display: 'none' }}>
+        <div className="loader" style={{ display: "none" }}>
           <div className="overlay">
             <div className="block"></div>
             <div className="block"></div>
@@ -297,17 +301,31 @@ export default function Home() {
         </div>
         {/* <div className="hero-gradient"></div>  */}
         <div className="container1">
-          <div className="hero-content" style={{ opacity: showEnhancedPreloader ? 0 : 1, transform: showEnhancedPreloader ? 'translateY(20px)' : 'translateY(0)' }}>
+          <div
+            className="hero-content"
+            style={{
+              opacity: showEnhancedPreloader ? 0 : 1,
+              transform: showEnhancedPreloader
+                ? "translateY(20px)"
+                : "translateY(0)",
+            }}
+          >
             <div className="hero-header">
-              <Copy animateOnScroll={false} delay={showEnhancedPreloader ? 6 : 0.85}>
+              <Copy
+                animateOnScroll={false}
+                delay={showEnhancedPreloader ? 6 : 0.85}
+              >
                 <h1>Spaces that feel rooted, human, and quietly bold</h1>
               </Copy>
             </div>
             <div className="hero-tagline">
-              <Copy animateOnScroll={false} delay={showEnhancedPreloader ? 7.15 : 1}>
+              <Copy
+                animateOnScroll={false}
+                delay={showEnhancedPreloader ? 7.15 : 1}
+              >
                 <p>
-                  At House Of Eleven, we shape environments that elevate daily life,
-                  invite pause, and speak through texture and light.
+                  At House Of Eleven, we shape environments that elevate daily
+                  life, invite pause, and speak through texture and light.
                 </p>
               </Copy>
             </div>
@@ -381,10 +399,10 @@ export default function Home() {
           <div className="what-we-do-header">
             <Copy delay={0.1}>
               <h1>
-                <span className="spacer">&nbsp;</span>
-                At House Of Eleven, we design with purpose and clarity, creating spaces
-                that speak through light, scale, and the quiet confidence of
-                lasting form.
+                <span className="spacer"></span>
+                At House Of Eleven, we design with purpose and clarity, creating
+                spaces that speak through light, scale, and the quiet confidence
+                of lasting form.
               </h1>
             </Copy>
           </div>

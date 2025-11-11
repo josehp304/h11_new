@@ -40,6 +40,7 @@ h1 {
   font-weight: 500;
   letter-spacing: -0.25rem;
   line-height: 1.05;
+  padding-top: 1rem;
 }
 
 h2 {
@@ -101,7 +102,7 @@ a {
 
 span.spacer {
   display: inline-block;
-  width: 20rem;
+  width: 0vw;
 }
 
 .container {
@@ -290,11 +291,11 @@ body.menu-open .menu-toggle {
     font-size: 2.5rem;
     letter-spacing: -0.075rem;
   }
-  
+
   .outro-title {
     left: calc(50% + 4rem);
   }
-  
+
   .intro-title .char,
   .outro-title .char {
     margin-top: 0.5rem;
