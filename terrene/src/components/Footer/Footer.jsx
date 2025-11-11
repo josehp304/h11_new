@@ -154,10 +154,10 @@ const Footer = () => {
             <img src="/logos/terrene-footer-logo.svg" alt="" />
           </div> */}
           <div className="footer-copyright">
-            <p>
-            </p>
-            <p>This website is using cookies.</p>
-            <p>All rights reserverd &copy; 2025</p>
+            <div>
+              <p>This website is using cookies</p>
+              <p>All rights reserverd &copy; 2025</p>
+            </div>
           </div>
         </div>
       </div>

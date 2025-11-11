@@ -103,31 +103,16 @@
   margin-bottom: 2rem;
 }
 
-.footer-copyright {
-  display: flex;
-  gap: 2rem;
-}
-
-.footer-copyright p {
-  flex: 1;
+.footer-copyright div {
   color: var(--base-400);
+  width: 100%;
+  text-align: end;
 }
 
-.footer-copyright p span {
-  color: var(--base-100);
+.footer-copyright div p:nth-child(2) {
+  font-size: 1.25rem;
 }
 
-.footer-copyright p:nth-child(2) {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-
-.footer-copyright p:nth-child(3) {
-  display: flex;
-  justify-content: flex-end;
-  text-align: right;
-}
 
 @media (max-width: 1000px) {
   .footer .footer-meta .container.footer-meta-header,
