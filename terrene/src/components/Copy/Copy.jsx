@@ -9,7 +9,12 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
-export default function Copy({ children, animateOnScroll = true, delay = 0 }) {
+export default function Copy({
+  children,
+  animateOnScroll = true,
+  delay = 0,
+  animateOnce = false,
+}) {
   const containerRef = useRef(null);
   const elementRefs = useRef([]);
   const splitRefs = useRef([]);
@@ -88,13 +93,19 @@ export default function Copy({ children, animateOnScroll = true, delay = 0 }) {
         };
 
         if (animateOnScroll) {
+          const scrollTriggerConfig = {
+            trigger: containerRef.current,
+            start: "top 90%",
+            once: animateOnce,
+          };
+
+          if (!animateOnce) {
+            scrollTriggerConfig.toggleActions = "play reverse play reverse";
+          }
+
           gsap.to(lines.current, {
             ...animationProps,
-            scrollTrigger: {
-              trigger: containerRef.current,
-              start: "top 90%",
-              once: true,
-            },
+            scrollTrigger: scrollTriggerConfig,
           });
         } else {
           gsap.to(lines.current, animationProps);
@@ -111,7 +122,10 @@ export default function Copy({ children, animateOnScroll = true, delay = 0 }) {
         });
       };
     },
-    { scope: containerRef, dependencies: [animateOnScroll, delay] }
+    {
+      scope: containerRef,
+      dependencies: [animateOnScroll, delay, animateOnce],
+    },
   );
 
   if (React.Children.count(children) === 1) {
