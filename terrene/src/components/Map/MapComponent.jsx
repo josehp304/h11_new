@@ -60,8 +60,8 @@ export default function MapChart() {
             zIndex: 50,
             borderRadius: "1.8rem",
             overflow: "hidden",
-            height: "620px",
             width: "100%",
+            aspectRatio: "7/3"
           }}
         >
           <ComposableMap
