@@ -280,11 +280,6 @@ const Nav = () => {
           <div className="col col-2">
             <div className="socials">
               <div className="sub-col">
-                <div className="menu-meta menu-commissions">
-                  <p>Commissions</p>
-                  <p>build@terrene.studio</p>
-                  <p>+1 (872) 441‑2086</p>
-                </div>
                 <div className="menu-meta">
                   <p>Studio Address</p>
                   <p>No.17, Narasimhavilas Complex</p>
@@ -298,6 +293,13 @@ const Nav = () => {
                   <p>Instagram</p>
                   <p>Are.na</p>
                   <p>LinkedIn</p>
+                </div>
+              </div>
+              <div className="sub-col">
+                <div className="menu-meta menu-commissions">
+                  <p>Commissions</p>
+                  <p>build@terrene.studio</p>
+                  <p>+1 (872) 441‑2086</p>
                 </div>
               </div>
             </div>
