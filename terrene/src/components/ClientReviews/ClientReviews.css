@@ -52,7 +52,6 @@
   object-fit: cover;
   will-change: opacity;
   transform: scale(1.1);
-  
 }
 
 .client-reviews .client-review-copy h3 {
@@ -68,7 +67,7 @@
 
 .client-reviews .clients-list {
   position: absolute;
-  bottom: 8rem;
+  bottom: 4rem;
   left: 50%;
   width: 100%;
   transform: translate(-50%, -50%);
@@ -149,7 +148,7 @@
   }
 
   .client-reviews .client-review-copy h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 
