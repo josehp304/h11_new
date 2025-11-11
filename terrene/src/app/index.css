@@ -22,7 +22,7 @@
 }
 
 .hero .hero-bg::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -46,7 +46,7 @@
   align-items: center;
   width: 100%;
   max-width: 100%;
-  margin-top:10rem;
+  margin-top: 10rem;
   padding: 2rem;
   box-sizing: border-box;
   z-index: 1;
@@ -79,7 +79,6 @@
   gap: 2rem;
   padding: 1rem;
   box-sizing: border-box;
-  
 }
 
 .hero .hero-header {
@@ -431,4 +430,23 @@
   .gallery-callout .gallery-callout-img-content {
     display: none;
   }
+}
+
+.our-locations {
+  color: var(--base-100);
+  padding-bottom: 8rem;
+}
+
+.our-locations .our-locations-header {
+  margin-bottom: 4rem;
+  text-align: center;
+  width: "100%";
+}
+
+.our-locations .our-locations-header h2 {
+  padding-bottom: 0.2rem;
+}
+
+.our-locations .our-locations-header p {
+  color: var(--base-300);
 }

@@ -17,6 +17,7 @@ import ClientReviews from "@/components/ClientReviews/ClientReviews";
 import CTAWindow from "@/components/CTAWindow/CTAWindow";
 import Copy from "@/components/Copy/Copy";
 import Preloader from "@/components/Preloader/Preloader";
+import MapComponent from "@/components/Map/MapComponent";
 
 let isInitialLoad = true;
 gsap.registerPlugin(ScrollTrigger, CustomEase);
@@ -469,6 +470,20 @@ export default function Home() {
           <ClientReviews />
         </div>
       </section>
+
+      <section className="our-locations">
+        <div className="container">
+          <div className="our-locations-header">
+            <h2>Our Presence Across India</h2>
+            <p>
+              Explore our branches across key cities, each serving with the same
+              passion for design and craftsmanship.
+            </p>
+          </div>
+          <MapComponent />
+        </div>
+      </section>
+
       <section className="gallery-callout">
         <div className="container">
           <div className="gallery-callout-col">
