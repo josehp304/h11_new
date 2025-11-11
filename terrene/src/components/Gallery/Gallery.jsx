@@ -39,7 +39,7 @@ export default function Gallery() {
         containerRef.current.removeEventListener("mousedown", handleMouseDown);
         containerRef.current.removeEventListener(
           "touchstart",
-          handleTouchStart
+          handleTouchStart,
         );
       }
 
@@ -136,10 +136,10 @@ export default function Gallery() {
   }, []);
 
   const itemCount = 115;
-  const itemGap = 150;
+  const itemGap = 70;
   const columns = 4;
-  const itemWidth = 120;
-  const itemHeight = 160;
+  const itemWidth = 200;
+  const itemHeight = 266;
   const masonryOffset = 125;
 
   const stateRef = useRef({
@@ -237,35 +237,35 @@ export default function Gallery() {
         ? -100
         : -200
       : isMobile
-      ? 100
-      : 200;
+        ? 100
+        : 200;
     const directionBufferY = movingDown
       ? isMobile
         ? -100
         : -200
       : isMobile
-      ? 100
-      : 200;
+        ? 100
+        : 200;
 
     const startCol = Math.floor(
       (-state.currentX - viewWidth / 2 + (movingRight ? directionBufferX : 0)) /
-        (itemWidth + itemGap)
+        (itemWidth + itemGap),
     );
     const endCol = Math.ceil(
       (-state.currentX +
         viewWidth * (isMobile ? 1.0 : 1.2) +
         (!movingRight ? directionBufferX : 0)) /
-        (itemWidth + itemGap)
+        (itemWidth + itemGap),
     );
     const startRow = Math.floor(
       (-state.currentY - viewHeight / 2 + (movingDown ? directionBufferY : 0)) /
-        (itemHeight + itemGap)
+        (itemHeight + itemGap),
     );
     const endRow = Math.ceil(
       (-state.currentY +
         viewHeight * (isMobile ? 1.0 : 1.2) +
         (!movingDown ? directionBufferY : 0)) /
-        (itemHeight + itemGap)
+        (itemHeight + itemGap),
     );
 
     const currentItems = new Set();
@@ -412,7 +412,7 @@ export default function Gallery() {
         y: 0,
         duration: 1,
         ease: "hop",
-      }
+      },
     );
   };
 
@@ -485,7 +485,7 @@ export default function Gallery() {
       const now = Date.now();
       const distMoved = Math.sqrt(
         Math.pow(state.currentX - state.lastX, 2) +
-          Math.pow(state.currentY - state.lastY, 2)
+          Math.pow(state.currentY - state.lastY, 2),
       );
 
       const isMobile = window.innerWidth <= 1000;

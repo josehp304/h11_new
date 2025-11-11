@@ -14,11 +14,11 @@
 
 .item {
   position: absolute;
-  width: 120px;
-  height: 160px;
+  width: 200px;
+  aspect-ratio: 3 / 4;
   overflow: hidden;
   cursor: pointer;
-  border-radius: 0.5rem;
+  border-radius: 0.6rem;
 }
 
 .item img {
